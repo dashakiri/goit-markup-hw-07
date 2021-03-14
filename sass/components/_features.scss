@@ -1,0 +1,35 @@
+.features {
+  padding-top: 94px;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--set-gap));
+}
+
+.features-list__item {
+  flex-basis: calc(100% / 4 - var(--set-gap));
+  margin-left: var(--set-gap);
+}
+
+.features-list__icon {
+  @include flexbox(center, center);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--background-color-grey);
+  margin-bottom: var(--set-gap);
+}
+
+.features-list__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

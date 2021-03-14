@@ -1,0 +1,80 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--background-color-grey);
+}
+
+.services__header,
+.team__header {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--set-gap));
+}
+
+.team-list__member {
+  flex-basis: calc(100% / 4 - var(--set-gap));
+  margin-left: var(--set-gap);
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  background-color: var(--primary-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member__photo {
+  display: block;
+}
+
+.member__info {
+  padding: var(--set-gap) 10px;
+}
+
+.member__name {
+  font-weight: 500;
+}
+
+.member__position {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.member__socials {
+ @include flexbox(center, center);
+  margin-top: 16px;
+}
+
+.member-socials__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.member-socials__link {
+ @include flexbox(center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-icons);
+  @include transition(color);
+ @include transition(background-color);
+
+ &:hover, &:focus {
+  color: var(--primary-color-white);
+  background-color: var(--blue-color);   
+ }
+}
+
+.social-icon {
+  fill: currentColor;
+}

@@ -1,0 +1,59 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container,
+.site-nav {
+@include flexbox(center, center);
+}
+
+.navigation-list,
+.contact-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
+}
+
+.navigation-list__item {
+  display: inline-block;
+}
+
+.navigation-list__item + .navigation-list__item,
+.contact-list__item + .contact-list__item {
+  margin-left: 50px;
+}
+
+.contact-list {
+  margin-left: auto;
+  @include flexbox(center, center);
+}
+
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation-list__link {
+  position: relative;
+  display: inline-block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-headings);
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+
+.navigation-list__link--color {
+  color: var(--primary-color-text);
+}
