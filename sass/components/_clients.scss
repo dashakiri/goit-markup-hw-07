@@ -27,12 +27,11 @@
   border-radius: 4px;
 
   color: var(--social-icons);
-  @include transition(color);
-  @include transition(border);
+  transition: color var(--transition), border var(--transition);
 
   &:hover, &:focus {
     color: var(--blue-color);
-     border: 1px solid var(--blue-color);
+    border: 1px solid var(--blue-color);
   }
 }
 

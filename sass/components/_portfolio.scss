@@ -18,10 +18,8 @@
   color: var(--secondary-color-headings);
   background-color: var(--background-color-grey);
   border: none;
-  @include transition(color);
-  @include transition(background-color);
-  @include transition(box-shadow);
-  
+  transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
+    
 &:hover, &:focus {
     color: var(--primary-color-white);
   background-color: var(--blue-color);
